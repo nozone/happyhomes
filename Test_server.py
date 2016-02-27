@@ -3,6 +3,8 @@ Created on Feb 27, 2016
 
 @author: Shaq
 '''
+#meant to test the server
+
 import requests
 
 if __name__ == '__main__':
@@ -15,8 +17,3 @@ if __name__ == '__main__':
     print a.url
     print a.status_code 
     print a.json()
-    """
-    a=requests.put(url, params=parameters)
-    print a.status_code 
-    print a.json()
-    """

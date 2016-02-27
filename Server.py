@@ -5,8 +5,8 @@ Created on Feb 27, 2016
 '''
 from flask import Flask, jsonify, request
 from flask_restful import Resource, Api, reqparse, marshal_with, fields
-from Uber_project import Estimates
-from Uber_project import Uber_database
+from Uber_cost import Estimates
+from Uber_cost import Uber_database
 #import request
 
 app = Flask(__name__)

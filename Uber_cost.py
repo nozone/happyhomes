@@ -40,22 +40,6 @@ class Uber_database:
             if starting==False:
                 parameters["end_place_id"]=location
         
-    def get_uber_url(self):
-        #location_str=self.return_str_from_location(source,True)+'&'+self.return_str_from_location(destination,False)
-        
-        estimate_url='/v1/requests/estimate'
-        url = 'https://api.uber.com/v1/products'
-        
-        parameters = {
-               'response_type': 'price',
-               'redirect_uri': 'https://api.uber.com/v1/requests/estimate',
-               'scope': 'profile',
-            }
-            
-        # Redirect user here to authorize your application
-        self.login_url = self.uber_api.get_authorize_url(**parameters)
-        return self.login_url
-    
     def get_Uber_products(self, location):
         url = 'https://api.uber.com/v1/products'
 
@@ -76,11 +60,7 @@ class Uber_database:
     
     def get_Uber_estimate_test(self):
         url = 'https://api.uber.com/v1/estimates/price'
-        
-        basic='/v1/requests/estimate?'
-        start='start_latitude=37.775818&start_longitude=-122.418028'
-        end='end_latitude=37.775818&end_longitude=-122.418028'
-        
+                
         parameters = {
             'server_token': 'tPuLpfcqHgkcbXuyoQCKKuhBfX523VMEgKT1BksX',
             'start_latitude': 37.775818,
