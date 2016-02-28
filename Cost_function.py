@@ -68,7 +68,7 @@ def return_best_locations_to_live(lat, long, max_cost, partial_dataset=True):
         print "Duration", google_travel_duration, uberinfo.duration
         print "Transfers", google_travel_transfers, 0
         explanation='We selected the method with the lowest cost, all else being equal'
-        max_cost=0
+        
         cost_per_duration=max_cost/30
         if google_travel_transfers>5:
             explanation="Public transit requires " + str(google_travel_transfers) + " transfers to get to work, so we selected Uber."
