@@ -21,7 +21,7 @@ Challenge: Build a tool that helps Janice balance her transportation costs and t
 See contributor details on site
 
 ## Datasets and API's
-Google Directions / Geocode API
-Uber SDK
-Pad Mapper
-AARP Livability Index
+- Google Directions / Geocode API
+- Uber SDK
+- Pad Mapper
+- AARP Livability Index
