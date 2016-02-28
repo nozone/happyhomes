@@ -91,10 +91,10 @@
               </a>
         	</div>
         </div>
-        
+
         <div class="container-fluid col-md-4 hidden-xs hidden-sm" style="background-image:url(images/uberX_FrontView_BW.jpg); background-size:cover; background-position:center; height:100%">
         </div>
-        
+
         <div class="container-fluid col-md-1 hidden-xs hidden-sm" style="background-image:url(images/bg-pattern-green2.png); height:100%">
         </div>
     </section>
@@ -164,13 +164,13 @@
                     <p>Bio</p>
                 </div>
             </div>
-            
+
         </div>
     </section>
 
     <!-- Problem Statement Section -->
     <section id="problem" class="problem-section">
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-12">
                     <h2>Problem Statement</h2>
@@ -191,10 +191,79 @@
 
     <!-- Search Section -->
     <section id="search" class="search-section">
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-12">
                     <h1>Search Section</h1>
+                    <hr>
+                    <p>Help text</p>
+                    <hr>
+
+                    <div class="bs-component">
+                      <form class="form-horizontal">
+                        <fieldset>
+                          <div class="form-group">
+                            <label for="inputAddress" class="col-md-2 control-label">Work Address</label>
+                            <div class="col-md-8">
+                              <input type="text" class="form-control" id="inputAddress" placeholder="Work Address">
+                              <span class="help-block">A block of help text that.</span>
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label for="inputPassword" class="col-md-2 control-label">Password</label>
+                            <div class="col-md-8">
+                              <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+                              <span class="help-block">A block of help text that.</span>
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label class="col-md-2 control-label">Prefferred Transit Type</label>
+                            <div class="col-md-8">
+                              <div class="radio">
+                                <label>
+                                  <input type="radio" name="optionsTransit" id="optionsTransit1" value="option1" checked="">
+                                  UberX
+                                </label>
+                              </div>
+                              <div class="radio">
+                                <label>
+                                  <input type="radio" name="optionsTransit" id="optionsTransit2" value="option2">
+                                  Metro Rail
+                                </label>
+                              </div>
+                            </div>
+                            <span class="help-block">A block of help text that.</span>
+                          </div>
+                          <div class="form-group">
+                            <label for="select" class="col-md-2 control-label">Selects</label>
+                            <div class="col-md-8">
+                              <select class="form-control" id="select">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                              </select>
+                              <br>
+                              <select multiple="" class="form-control">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <div class="col-lg-10 col-lg-offset-2">
+                              <button type="submit" class="btn btn-primary">Submit</button>
+                              <button type="reset" class="btn btn-default">Clear</button>
+                            </div>
+                          </div>
+                        </fieldset>
+                      </form>
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -202,7 +271,7 @@
 
     <!-- Data Sources Section -->
     <section id="data" class="data-section">
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-12">
                     <h2>Data Sources Section</h2>
@@ -302,7 +371,7 @@
             </div>
         </div>
     </section>
-    
+
     <footer>
     	<div class="container-fluid" style="background-color:#000; color: white; padding:20px 0px;">
         	<div class="col-xs-11 pull-left">
@@ -319,14 +388,17 @@
 
     <!-- Bootstrap Core JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-    
+
     <!-- Scrolling Nav JavaScript -->
     <script src="js/jquery.easing.min.js"></script>
     <script src="js/scrolling-nav.js"></script>
-    
+
     <!-- Typekit Font Code -->
     <script src="https://use.typekit.net/bpk0tpr.js"></script>
 	<script>try{Typekit.load({ async: true });}catch(e){}</script>
+
+  <!-- Other js files -->
+  <script src="js/main.js"></script>
 
 
 </body>
