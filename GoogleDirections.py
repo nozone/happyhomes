@@ -8,7 +8,7 @@ class GoogleDirections:
 		aggregateMap = {'distance': 'N/A', 'duration':'N/A"', 'BUS':0,'SUBWAY':0,'METRO_RAIL':0}
 
 		legs = directions[0]["legs"]
-		print "there are " + str(len(legs)) + " legs \n"
+		#print "there are " + str(len(legs)) + " legs \n"
 
 		for leg in legs:
 			print "there are " + str(len(leg["steps"])) + "steps"
@@ -23,7 +23,8 @@ class GoogleDirections:
 					vehicle_type = step["transit_details"]["line"]["vehicle"]['type']
 					aggregateMap[vehicle_type] = aggregateMap[vehicle_type] + num_stops
 				else:
-					print "found a non-transit step"
+					None
+					#print "found a non-transit step"
 
 		return aggregateMap
 

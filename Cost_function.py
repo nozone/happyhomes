@@ -32,18 +32,66 @@ def return_best_locations_to_live(lat, long, max_cost, partial_dataset=True):
         sample1=[str(lat)+','+str(long), str(data['Lat'])+','+str(data['Long'])]
 
         client = googlemaps.Client(key="AIzaSyD6z37kjR2tSz48dTM_SOEdwduLzuwImuo")
-        
         directions = client.directions(sample1[0],sample1[1], mode="transit")
         googleDirections = GoogleDirections()
+        aggregateData = googleDirections.parseDirectionDump(directions)
+        google_cost=googleDirections.generateCostModel(aggregateData)
+        google_travel_type=''
+        transfers=0
+        for method in ['BUS', 'SUBWAY', 'METRO_RAIL']:
+            for integ in range(aggregateData[method]):
+                if google_travel_type!="":
+                    google_travel_type+=" + "
+                google_travel_type+=method
+                
+                transfers+=1
+        print google_travel_type
+        
+        google_travel_distance=aggregateData['distance']
+        google_travel_duration=aggregateData['duration']
+        google_travel_transfers=transfers-1
+        
+        
+        
         #print googleDirections.geoCodeAddress(client, "Salisbury, MD")
     
-        aggregateData = googleDirections.parseDirectionDump(directions)
-        cost=googleDirections.generateCostModel(aggregateData)
-        print "Cost:", cost,uberinfo.price
-
         
+        winner='Uber'
+        google_travel_duration=google_travel_duration/60
+        print "Cost:", google_cost,uberinfo.price
+        print "Distance", google_travel_distance, uberinfo.distance
+        print "Duration", google_travel_duration, uberinfo.duration
+        print "Transfers", google_travel_transfers, 0
+        explanation='We selected the method with the lowest cost, all else being equal'
+        if google_travel_transfers>5:
+            explanation="Public transit requires " + str(google_travel_transfers) + " transfers to get to work, so we selected Uber."
+            winner='Uber'
+        elif google_travel_duration-uberinfo.duration>20:
+            explanation="Public transportation takes " + str(google_travel_duration-uberinfo.duration)+ " minutes more than Uber, so we picked Uber."
+            winner='Uber'
+        elif uberinfo.duration-google_travel_duration>20:
+            explanation="Uber takes a route " + str(uberinfo.duration-google_travel_duration) + " minutes longer than public transportation, so we picked public transportation."
+            winner='PT'
+        elif google_travel_distance-uberinfo.distance>20:
+            explanation="Public transportation takes a route " +  str(google_travel_distance-uberinfo.distance) + " miles longer than Uber, so we picked Uber."
+            winner='Uber'
+        elif uberinfo.distance-google_travel_distance>20:
+            explanation="Uber takes a route" + str(uberinfo.distance-google_travel_distance)+  " miles longer than public transportation, so we picked public transportation."
+            winner='PT'
+        elif uberinfo.price-google_cost>15:
+            explanation="Uber costs $"+ str(uberinfo.price-google_cost) + " more than public transportation, so we picked public transportation."
+            winner='PT'    
+        elif google_cost - uberinfo.price>0:
+            explanation="Public transportation is more expensive than Uber, so we picked Uber."
+            winner='Uber'    
+        
+            
+        print explanation
         #Testing uberinfo
-        answer[i]={'living_index':data["Live"], 'rent':data["Cost"], 'best_travel_method':uberinfo.type, 'distance':uberinfo.distance, 'cost_of_best_travel_method':uberinfo.price, 'travel_duration':uberinfo.duration}
+        if winner=='Uber':
+            answer[i]={'living_index':data["Live"], 'rent':data["Cost"], 'best_travel_method':uberinfo.type, 'distance':uberinfo.distance, 'cost_of_best_travel_method':uberinfo.price, 'travel_duration':uberinfo.duration, 'explanation':explanation}
+        else:
+            answer[i]={'living_index':data["Live"], 'rent':data["Cost"], 'best_travel_method':google_travel_type, 'distance':google_travel_distance, 'cost_of_best_travel_method':google_cost, 'travel_duration':google_travel_duration, 'explanation':explanation}
         print answer
     #algorithm to determine the best
     max=0
@@ -80,4 +128,4 @@ def return_best_locations_to_live(lat, long, max_cost, partial_dataset=True):
     return  
 
 if __name__ == '__main__':
-    return_best_locations_to_live(38.930582, -77.030789, 20)
+    return_best_locations_to_live(38.933958, -77.019679, 20)
