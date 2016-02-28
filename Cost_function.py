@@ -55,28 +55,39 @@ def return_best_locations_to_live(lat, long, max_cost, partial_dataset=True):
         google_travel_distance=aggregateData['distance']
         google_travel_duration=aggregateData['duration']
         google_travel_transfers=transfers-1
-        
+        google_travel_duration=google_travel_duration/60
         
         
         #print googleDirections.geoCodeAddress(client, "Salisbury, MD")
-    
+        cost_per_duration=max_cost/30
+        fits_in_cost_tolerance=True
+        max_cost_per_10_minutes=max_cost
+        #Price of Uber over PT
+        cost_difference=uberinfo.price-google_cost
+        #Duration of PT over Uber
+        minute_difference=google_travel_duration-uberinfo.duration
+        uber_cost_premium_for_10_minutes=99999999999
+        if minute_difference>0:
+            print cost_difference, minute_difference
+            
+            uber_cost_premium_for_10_minutes=(cost_difference/minute_difference)*10
+        else:
+            fits_in_cost_tolerance=False
+        if uber_cost_premium_for_10_minutes>max_cost:
+            fits_in_cost_tolerance=False
         
         winner='Uber'
-        google_travel_duration=google_travel_duration/60
+        
         print "Cost:", google_cost,uberinfo.price
+        print "Cost Tolerance:", uber_cost_premium_for_10_minutes, max_cost, fits_in_cost_tolerance
         print "Distance", google_travel_distance, uberinfo.distance
         print "Duration", google_travel_duration, uberinfo.duration
         print "Transfers", google_travel_transfers, 0
         explanation='We selected the method with the lowest cost, all else being equal'
         
-        cost_per_duration=max_cost/30
-        fits_in_cost_tolerance=True
-        max_cost_per_10_minutes=max_cost
-        cost_difference=uberinfo.price-google_cost
-        minute_difference=google_travel_duration-uberinfo.duration
-        uber_cost_premium_for_10_minutes=(cost_difference/minute_difference)*10
-        if uber_cost_premium_for_10_minutes>max_cost:
-            fits_in_cost_tolerance=False
+        
+        
+        print uber
         
         
         #-1
@@ -115,11 +126,12 @@ def return_best_locations_to_live(lat, long, max_cost, partial_dataset=True):
             
         print explanation
         #Testing uberinfo
+        
         if winner=='Uber':
             answer[i]={'living_index':data["Live"], 'rent':data["Cost"], 'best_travel_method':uberinfo.type, 'distance':uberinfo.distance, 'cost_of_best_travel_method':uberinfo.price, 'travel_duration':uberinfo.duration, 'explanation':explanation}
         else:
             answer[i]={'living_index':data["Live"], 'rent':data["Cost"], 'best_travel_method':google_travel_type, 'distance':google_travel_distance, 'cost_of_best_travel_method':google_cost, 'travel_duration':google_travel_duration, 'explanation':explanation}
-    
+        answer[i]['uber_premium_for_10_minutes']=uber_cost_premium_for_10_minutes
     for i in answer:
         print i, answer[i]
     return answer 
@@ -162,4 +174,4 @@ def return_best_locations_to_live(lat, long, max_cost, partial_dataset=True):
     return  
 
 if __name__ == '__main__':
-    return_best_locations_to_live(38.933958, -77.019679, 15, False)
+    return_best_locations_to_live(38.933958, -77.019679, 3.5, False)
