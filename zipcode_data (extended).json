@@ -1,0 +1,434 @@
+{
+  "20001": {
+    "Street":"2125 1st St NW",
+    "City":" Washington",
+    "State":"DC",
+    "Cost":"$1,000 ",
+    "Live":59,
+    "Lat":38.918842,
+    "Long":-77.011821
+  },
+  "20002": {
+    "Street":"415 H St NE",
+    "City":" Washington",
+    "State":"DC",
+    "Cost":"$1,050 ",
+    "Live":59,
+    "Lat":38.900002,
+    "Long":-76.999958
+  },
+  "20007": {
+    "Street":"4412 Volta Pl NW",
+    "City":" Washington",
+    "State":"DC",
+    "Cost":"$1,050 ",
+    "Live":58,
+    "Lat":38.909379,
+    "Long":-77.081183
+  },
+  "20010": {
+    "Street":"426 Newton Pl NW",
+    "City":" Washington",
+    "State":"DC",
+    "Cost":"$1,000 ",
+    "Live":59,
+    "Lat":38.933958,
+    "Long":-77.019679
+  },
+  "20011": {
+    "Street":"527 Somerset Pl NW",
+    "City":" Washington",
+    "State":"DC",
+    "Cost":"$875 ",
+    "Live":59,
+    "Lat":38.966863,
+    "Long":-77.021134
+  },
+  "20012": {
+    "Street":"6411 Piney Branch Rd NW",
+    "City":" Washington",
+    "State":"DC",
+    "Cost":"$998 ",
+    "Live":57,
+    "Lat":38.967796,
+    "Long":-77.026419
+  },
+  "20016": {
+    "Street":"4302 Fessenden St NW",
+    "City":" Washington",
+    "State":"DC",
+    "Cost":"$1,050 ",
+    "Live":56,
+    "Lat":38.954421,
+    "Long":-77.084146
+  },
+  "20017": {
+    "Street":"1256 Farragut Pl NE",
+    "City":" Washington",
+    "State":"DC",
+    "Cost":"$813 ",
+    "Live":57,
+    "Lat":38.95176,
+    "Long":-76.987761
+  },
+  "20019": {
+    "Street":"2928 K St SE",
+    "City":" Washington",
+    "State":"DC",
+    "Cost":"$1,150 ",
+    "Live":58,
+    "Lat":38.878619,
+    "Long":-76.96539
+  },
+  "20020": {
+    "Street":"1800 Minnesota Ave SE",
+    "City":" Washington",
+    "State":"DC",
+    "Cost":"$860 ",
+    "Live":58,
+    "Lat":38.878619,
+    "Long":-76.96539
+  },
+  "20032": {
+    "Street":"3221 Wheeler Rd SE",
+    "City":" Washington",
+    "State":"DC",
+    "Cost":"$835 ",
+    "Live":58,
+    "Lat":38.842637,
+    "Long":-76.994403
+  },
+  "20036": {
+    "Street":"1426 21st St NW",
+    "City":" Washington",
+    "State":"DC",
+    "Cost":"$1,000 ",
+    "Live":60,
+    "Lat":38.909454,
+    "Long":-77.046823
+  },
+  "20705": {
+    "Street":"11413 Rosedale Ln",
+    "City":" Beltsville",
+    "State":"MD",
+    "Cost":"$1,069 ",
+    "Live":49,
+    "Lat":39.02501,
+    "Long":-76.895955
+  },
+  "20710": {
+    "Street":"5213 Newton St",
+    "City":" Bladensburg",
+    "State":"MD",
+    "Cost":"$1,150 ",
+    "Live":51,
+    "Lat":38.936165,
+    "Long":-76.929188
+  },
+  "20712": {
+    "Street":"4107 33rd St",
+    "City":" Mount Rainier",
+    "State":"MD",
+    "Cost":"$1,096 ",
+    "Live":55,
+    "Lat":38.940609,
+    "Long":-76.962018
+  },
+  "20737": {
+    "Street":"6303 58th Pl",
+    "City":" East Riverdale",
+    "State":"MD",
+    "Cost":"$740 ",
+    "Live":49,
+    "Lat":38.964388,
+    "Long":-76.916203
+  },
+  "20740": {
+    "Street":"6200 Westchester Park Dr",
+    "City":" College Park",
+    "State":"MD",
+    "Cost":"$1,139 ",
+    "Live":48,
+    "Lat":38.992152,
+    "Long":-76.899279
+  },
+  "20743": {
+    "Street":"103 Sultan Ave",
+    "City":" Capitol Heights",
+    "State":"MD",
+    "Cost":"$832 ",
+    "Live":51,
+    "Lat":38.887268,
+    "Long":-76.91149
+  },
+  "20746": {
+    "Street":"5601 Regency Park Ct",
+    "City":" Suitland-Silver Hill",
+    "State":"MD",
+    "Cost":"$1,115 ",
+    "Live":49,
+    "Lat":38.83818,
+    "Long":-76.910106
+  },
+  "20747": {
+    "Street":"3711 Donnell Dr",
+    "City":" Forestville",
+    "State":"MD",
+    "Cost":"$1,100 ",
+    "Live":48,
+    "Lat":38.843137,
+    "Long":-76.885248
+  },
+  "20770": {
+    "Street":"47A Ridge Rd",
+    "City":" Greenbelt",
+    "State":"MD",
+    "Cost":"$885 ",
+    "Live":51,
+    "Lat":39.006428,
+    "Long":-76.873565
+  },
+  "20781": {
+    "Street":"4230 Oglethorpe St",
+    "City":" Hyattsville",
+    "State":"MD",
+    "Cost":"$1,197 ",
+    "Live":51,
+    "Lat":38.959561,
+    "Long":-76.943592
+  },
+  "20782": {
+    "Street":"905 Chillum Rd",
+    "City":" Hyattsville",
+    "State":"MD",
+    "Cost":"$801 ",
+    "Live":53,
+    "Lat":38.96178,
+    "Long":-76.993981
+  },
+  "20783": {
+    "Street":"1814 Metzerott Road",
+    "City":" Adelphi",
+    "State":"MD",
+    "Cost":"$1,105 ",
+    "Live":52,
+    "Lat":39.007179,
+    "Long":-76.978166
+  },
+  "20784": {
+    "Street":"4907 78th Ave",
+    "City":" Hyattsville",
+    "State":"MD",
+    "Cost":"$1,109 ",
+    "Live":50,
+    "Lat":38.946893,
+    "Long":-76.876887
+  },
+  "20785": {
+    "Street":"1913 Barlowe Pl",
+    "City":" Hyattsville",
+    "State":"MD",
+    "Cost":"$957 ",
+    "Live":49,
+    "Lat":38.917037,
+    "Long":-76.866719
+  },
+  "20814": {
+    "Street":"5113 Wilson Ln",
+    "City":" Bethesda",
+    "State":"MD",
+    "Cost":"$885 ",
+    "Live":60,
+    "Lat":38.987535,
+    "Long":-77.102433
+  },
+  "20815": {
+    "Street":"4716 Bradley Blvd",
+    "City":" Bethesda",
+    "State":"MD",
+    "Cost":"$1,000 ",
+    "Live":59,
+    "Lat":38.977652,
+    "Long":-77.093143
+  },
+  "20901": {
+    "Street":"321 University Blvd W",
+    "City":" Silver Spring",
+    "State":"MD",
+    "Cost":"$856 ",
+    "Live":55,
+    "Lat":39.025042,
+    "Long":-77.017513
+  },
+  "20902": {
+    "Street":"1927 Brightleaf Ct",
+    "City":" Silver Spring",
+    "State":"MD",
+    "Cost":"$835 ",
+    "Live":60,
+    "Lat":39.024946,
+    "Long":-77.040512
+  },
+  "20903": {
+    "Street":"820 University Blvd E",
+    "City":" Silver Spring",
+    "State":"MD",
+    "Cost":"$1,109 ",
+    "Live":58,
+    "Lat":38.995618,
+    "Long":-76.992599
+  },
+  "20910": {
+    "Street":"923 Silver Spring Ave",
+    "City":" Silver Spring",
+    "State":"MD",
+    "Cost":"$1,050 ",
+    "Live":62,
+    "Lat":38.991688,
+    "Long":-77.024807
+  },
+  "20912": {
+    "Street":"54 Walnut Ave",
+    "City":" Takoma Park",
+    "State":"MD",
+    "Cost":"$954 ",
+    "Live":61,
+    "Lat":38.972679,
+    "Long":-77.010934
+  },
+  "22003": {
+    "Street":"6802 Murray Ln",
+    "City":" Annandale",
+    "State":"VA",
+    "Cost":"$1,100 ",
+    "Live":58,
+    "Lat":38.845042,
+    "Long":-77.179747
+  },
+  "22041": {
+    "Street":"3685 Madison View Ln",
+    "City":" Falls Church",
+    "State":"VA",
+    "Cost":"$850 ",
+    "Live":59,
+    "Lat":38.844183,
+    "Long":-77.13877
+  },
+  "22042": {
+    "Street":"7235 Arlington Blvd",
+    "City":" Falls Church",
+    "State":"VA",
+    "Cost":"$1,063 ",
+    "Live":57,
+    "Lat":38.864718,
+    "Long":-77.195506
+  },
+  "22044": {
+    "Street":"3023 Federal Hill Dr",
+    "City":" Falls Church",
+    "State":"VA",
+    "Cost":"$1,159 ",
+    "Live":59,
+    "Lat":38.867083,
+    "Long":-77.139399
+  },
+  "22046": {
+    "Street":"210 E Fairfax St",
+    "City":" Falls Church",
+    "State":"VA",
+    "Cost":"$1,199 ",
+    "Live":58,
+    "Lat":38.879705,
+    "Long":-77.168986
+  },
+  "22101": {
+    "Street":"1515 Chain Bridge Rd",
+    "City":" McLean",
+    "State":"VA",
+    "Cost":"$31 ",
+    "Live":55,
+    "Lat":38.930321,
+    "Long":-77.181849
+  },
+  "22201": {
+    "Street":"1401 N Taft St",
+    "City":" Arlington",
+    "State":"VA",
+    "Cost":"$1,105 ",
+    "Live":65,
+    "Lat":38.889519,
+    "Long":-77.081477
+  },
+  "22202": {
+    "Street":"2322 S Pierce St",
+    "City":" Arlington",
+    "State":"VA",
+    "Cost":"$1,180 ",
+    "Live":64,
+    "Lat":38.8519,
+    "Long":-77.071904
+  },
+  "22203": {
+    "Street":"4108 4th St N",
+    "City":" Arlington",
+    "State":"VA",
+    "Cost":"$973 ",
+    "Live":65,
+    "Lat":38.874807,
+    "Long":-77.107409
+  },
+  "22204": {
+    "Street":"1201 S Courthouse Rd",
+    "City":" Arlington",
+    "State":"VA",
+    "Cost":"$1,125 ",
+    "Live":64,
+    "Lat":38.862303,
+    "Long":-77.079067
+  },
+  "22205": {
+    "Street":"6337 22nd St N",
+    "City":" Arlington",
+    "State":"VA",
+    "Cost":"$891 ",
+    "Live":63,
+    "Lat":38.888937,
+    "Long":-77.154192
+  },
+  "22207": {
+    "Street":"3313 Lee Hwy",
+    "City":" Arlington",
+    "State":"VA",
+    "Cost":"$32 ",
+    "Live":63,
+    "Lat":38.896808,
+    "Long":-77.10176
+  },
+  "22302": {
+    "Street":"3529 Leesburg Ct",
+    "City":" Alexandria",
+    "State":"VA",
+    "Cost":"$1,109 ",
+    "Live":57,
+    "Lat":38.846804,
+    "Long":-77.116859
+  },
+  "22305": {
+    "Street":"3911 Elbert Avenue",
+    "City":" Alexandria",
+    "State":"VA",
+    "Cost":"$1,150 ",
+    "Live":59,
+    "Lat":38.841674,
+    "Long":-77.064636
+  },
+  "22311": {
+    "Street":"3613 Paul St",
+    "City":" Alexandria",
+    "State":"VA",
+    "Cost":"$1,107 ",
+    "Live":59,
+    "Lat":38.844906,
+    "Long":-77.124966
+  }
+}
