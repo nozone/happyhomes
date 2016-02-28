@@ -6,6 +6,9 @@ Welcome to Happy homes!!! Our site helps users determine the best place to live 
 A screenshot or screencast of your application
 
 
+![Isn't our app beautiful?!](www/images/logo.png)
+
+
 Details on which challenge you chose
 Serving last-mile mobility
 
