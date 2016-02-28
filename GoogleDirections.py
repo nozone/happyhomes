@@ -5,10 +5,10 @@ from googlemaps import convert
 class GoogleDirections:
 
 	def parseDirectionDump(self, directions):
-		aggregateMap = {'distance': 'N/A', 'duration':'N/A"', 'BUS':0,'SUBWAY':0,'METRO_RAIL':0}
+		aggregateMap = {'distance': 'N/A', 'duration':'N/A"', 'BUS':0,'SUBWAY':0,'METRO_RAIL':0, 'steps':100000000000000, 'type':''}
 
 		legs = directions[0]["legs"]
-		#print "there are " + str(len(legs)) + " legs \n"
+		print "there are " + str(len(legs)) + " legs \n"
 
 		for leg in legs:
 			print "there are " + str(len(leg["steps"])) + "steps"
@@ -16,16 +16,21 @@ class GoogleDirections:
 			distanceInMiles = distinanceInMeters * 0.000621371192
 			aggregateMap['distance'] = distanceInMiles
 			aggregateMap['duration'] = leg["duration"]["value"]
-
+			temp_steps=0
+			temp_type=''
 			for step in leg["steps"]:
 				if step["travel_mode"] == "TRANSIT":
 					num_stops = step["transit_details"]["num_stops"]
 					vehicle_type = step["transit_details"]["line"]["vehicle"]['type']
 					aggregateMap[vehicle_type] = aggregateMap[vehicle_type] + num_stops
+					temp_type+=vehicle_type + ' '
+					temp_steps+=1
 				else:
 					None
 					#print "found a non-transit step"
-
+			if temp_steps<aggregateMap['steps']:
+				aggregateMap['steps']=temp_steps
+				aggregateMap['type']=temp_type
 		return aggregateMap
 
 

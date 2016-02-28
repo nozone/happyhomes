@@ -38,6 +38,7 @@ def return_best_locations_to_live(lat, long, max_cost, partial_dataset=True):
         google_cost=googleDirections.generateCostModel(aggregateData)
         google_travel_type=''
         transfers=0
+        """
         for method in ['BUS', 'SUBWAY', 'METRO_RAIL']:
             for integ in range(aggregateData[method]):
                 if google_travel_type!="":
@@ -46,7 +47,10 @@ def return_best_locations_to_live(lat, long, max_cost, partial_dataset=True):
                 
                 transfers+=1
         print google_travel_type
-        
+        """
+        google_travel_type=aggregateData['type']
+        print google_travel_type
+        transfers=aggregateData['steps']
         google_travel_distance=aggregateData['distance']
         google_travel_duration=aggregateData['duration']
         google_travel_transfers=transfers-1
@@ -84,6 +88,10 @@ def return_best_locations_to_live(lat, long, max_cost, partial_dataset=True):
         elif google_cost - uberinfo.price>0:
             explanation="Public transportation is more expensive than Uber, so we picked Uber."
             winner='Uber'    
+        else:
+            uberinfo.price-google_cost
+            explanation="Uber is similar to public transportation in cost, duration, and distance. We selected public transportation because it's $"+ str(uberinfo.price-google_cost) + " cheaper."
+            winner='PT'    
         
             
         print explanation
@@ -103,16 +111,16 @@ def return_best_locations_to_live(lat, long, max_cost, partial_dataset=True):
     max_travel_duration=0
     for i in answer:
         
-        if answer[i]['secret_cost_function']>max:
-            max=['secret_cost_function']
-        if answer[i]['secret_cost_function']<min:
-            min=['secret_cost_function']
+        if answer[i]['cost_of_best_travel_method']>max:
+            max=answer[i]['cost_of_best_travel_method']
+        if answer[i]['cost_of_best_travel_method']<min:
+            min=answer[i]['cost_of_best_travel_method']
     for i in answer:
         """
         each factor weighed equally. squared to give exponetial cost 
         """
         rent=0
-        living_index=100-living_index
+        living_index=100-0
         max_living_index=100-min_living_index
         distance=0
         cost_of_travel=0
@@ -128,4 +136,4 @@ def return_best_locations_to_live(lat, long, max_cost, partial_dataset=True):
     return  
 
 if __name__ == '__main__':
-    return_best_locations_to_live(38.933958, -77.019679, 20)
+    return_best_locations_to_live(38.933958, -77.019679, 20, False)
