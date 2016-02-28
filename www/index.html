@@ -17,6 +17,8 @@
     <!-- Custom CSS -->
     <link href="css/scrolling-nav.css" rel="stylesheet">
     <link href="https://d1a3f4spazzrp4.cloudfront.net/uber-icons/3.12.1/uber-icons.css" rel="stylesheet">
+    <link href="fonts/uber-fonts.css" rel="stylesheet">
+    <link href="https://cdn.datatables.net/1.10.11/css/jquery.dataTables.min.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -116,52 +118,52 @@
             <h2>Team Happy Home</h2>
             <br>
             <div class="col-lg-12 well-lg">
-                <img class="col-lg-4 img-responsive" src="http://placeholdit.imgix.net/~text?w=350&h=300">
+                <img class="col-lg-4 img-responsive" src="https://scontent-lga3-1.xx.fbcdn.net/hphotos-xta1/t31.0-8/12195044_983103155090817_4259629623728342393_o.jpg">
                 <div class="col-lg-8">
                     <h4>Kevin Hawkins</h4>
                     <h5>Team Lead, Front-End UX Development, UI Design</h5>
                     <hr>
-                    <p>Bio</p>
+                    <p>Coder, Strategy &amp; Design consultant, serial entrepreneur. Travel junkie. DC native. OREO addict. Kevin is visual designer, front-end web developer, and go-getter, primarily focused on UX design and product design. He's an adaptive and creative team player and leader on projects that include website re-designs, online marketing, out-of-home advertising campaigns, and re-branding solutions, as well as niche small business solutions.</p>
                 </div>
             </div>
             <hr>
             <div class="col-lg-12 well-lg">
-                <img class="col-lg-4 img-responsive" src="http://placeholdit.imgix.net/~text?w=350&h=300">
+                <img class="col-lg-4 img-responsive" src="https://scontent-lga3-1.xx.fbcdn.net/hphotos-prn2/t31.0-8/10683506_10204307055178631_4272548263404440371_o.jpg">
                 <div class="col-lg-8">
                     <h4>Savanna Rovira</h4>
                     <h5>Front-End Development</h5>
                     <hr>
-                    <p>Bio</p>
+                    <p>Savanna Rovira is a Business Technology Analyst at Deloitte Consulting and a front-end web developer. Her experience has given her expertise focused on technology strategic solutions, including technology investment strategy, cybersecurity policy and strategy, technology acquisitions, data visualization, and implementation and performance measurement of strategic plans. She's currently studying back-end web development at General Assembly.</p>
                 </div>
             </div>
             <hr>
             <div class="col-lg-12 well-lg">
-                <img class="col-lg-4 img-responsive" src="http://placeholdit.imgix.net/~text?w=350&h=300">
+                <img class="col-lg-4 img-responsive" src="https://scontent-lga3-1.xx.fbcdn.net/hphotos-xat1/v/t1.0-9/12003149_10103999572895708_2255379414595045603_n.jpg?oh=f218d9bf386a44263f106d0e65926440&oe=576299A6">
                 <div class="col-lg-8">
                     <h4>Naudy Martinez</h4>
                     <h5>User Research &amp; Data Analytics</h5>
                     <hr>
-                    <p>Bio</p>
+                    <p>Naudy Martinez is a DC native interested in learning how to make cities equitable for all. She has over five years of project and grants management experience in the non-profit industry and has dedicated her career to serving communities across North America. Her other interests include tactical urbanism, the walking and biking movements, and place making.</p>
                 </div>
             </div>
             <hr>
             <div class="col-lg-12 well-lg">
-                <img class="col-lg-4 img-responsive" src="http://placeholdit.imgix.net/~text?w=350&h=300">
+                <img class="col-lg-4 img-responsive" src="https://scontent-lga3-1.xx.fbcdn.net/hprofile-xfa1/t31.0-1/c230.50.621.621/476127_10100898638163768_1609506219_o.jpg">
                 <div class="col-lg-8">
                     <h4>Martin Folkoff</h4>
                     <h5>Back-End Development</h5>
                     <hr>
-                    <p>Bio</p>
+                    <p>Works at Booz Allen Hamilton. Studied Computer Science at University of Maryland, College Park. From Salisbury, Maryland.</p>
                 </div>
             </div>
             <hr>
             <div class="col-lg-12 well-lg">
-                <img class="col-lg-4 img-responsive" src="http://placeholdit.imgix.net/~text?w=350&h=300">
+                <img class="col-lg-4 img-responsive" src="http://photos4.meetupstatic.com/photos/member/b/a/6/0/member_90167712.jpeg">
                 <div class="col-lg-8">
-                    <h4>Shaq X</h4>
+                    <h4>Shaq Katikala</h4>
                     <h5>Back-End Development</h5>
                     <hr>
-                    <p>Bio</p>
+                    <p>I work in online privacy with a background in law and technology, striving to bridge the gap between law and technology in this field. I'm barred in NY and my legal focus is privacy, compliance, and transactional law. On the technology side, I've worked on projects relating to network packet inspection, reverse engineering, fraud detection, and machine learning on a variety of platforms. I enjoy working on making cutting-edge technology safe and progressive while getting my hands dirty in the technical nuances.</p>
                 </div>
             </div>
 
@@ -206,57 +208,21 @@
                             <label for="inputAddress" class="col-md-2 control-label">Work Address</label>
                             <div class="col-md-8">
                               <input type="text" class="form-control" id="inputAddress" placeholder="Work Address">
-                              <span class="help-block">A block of help text that.</span>
+                              <span class="help-block">Let us know where you commute to for work.</span>
                             </div>
                           </div>
+
                           <div class="form-group">
-                            <label for="inputPassword" class="col-md-2 control-label">Password</label>
+                            <label for="inputCost" class="col-md-2 control-label">Daily Transit Cost Tolerance</label>
                             <div class="col-md-8">
-                              <input type="password" class="form-control" id="inputPassword" placeholder="Password">
-                              <span class="help-block">A block of help text that.</span>
+                              <input type="number" class="form-control" id="inputCost" placeholder="Example: $10">
+                              <span class="help-block">Let us know how much you are willing to spend each day on your transit costs (roundtrip total).</span>
                             </div>
                           </div>
-                          <div class="form-group">
-                            <label class="col-md-2 control-label">Prefferred Transit Type</label>
-                            <div class="col-md-8">
-                              <div class="radio">
-                                <label>
-                                  <input type="radio" name="optionsTransit" id="optionsTransit1" value="option1" checked="">
-                                  UberX
-                                </label>
-                              </div>
-                              <div class="radio">
-                                <label>
-                                  <input type="radio" name="optionsTransit" id="optionsTransit2" value="option2">
-                                  Metro Rail
-                                </label>
-                              </div>
-                            </div>
-                            <span class="help-block">A block of help text that.</span>
-                          </div>
-                          <div class="form-group">
-                            <label for="select" class="col-md-2 control-label">Selects</label>
-                            <div class="col-md-8">
-                              <select class="form-control" id="select">
-                                <option>1</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5</option>
-                              </select>
-                              <br>
-                              <select multiple="" class="form-control">
-                                <option>1</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5</option>
-                              </select>
-                            </div>
-                          </div>
+
                           <div class="form-group">
                             <div class="col-lg-10 col-lg-offset-2">
-                              <button type="submit" class="btn btn-primary">Submit</button>
+                              <button type="submit" class="btn btn-primary"> <a href = "results.html"> Submit</a></button>
                               <button type="reset" class="btn btn-default">Clear</button>
                             </div>
                           </div>
@@ -397,8 +363,9 @@
     <script src="https://use.typekit.net/bpk0tpr.js"></script>
 	<script>try{Typekit.load({ async: true });}catch(e){}</script>
 
-  <!-- Other js files -->
-  <script src="js/main.js"></script>
+  <!-- Other js files
+  <script src="js/main.js"></script> -->
+  <script src="https://cdn.datatables.net/1.10.11/js/jquery.dataTables.min.js"></script>
 
 
 </body>
