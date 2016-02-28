@@ -1,0 +1,4 @@
+flask=0.10.1
+requests=2.9.1
+uber_rides==0.2.0
+googlemaps==2.4.2
