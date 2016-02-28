@@ -93,21 +93,29 @@ def return_best_locations_to_live(lat, long, max_cost, partial_dataset=True):
         #-1
         #-1 minutes
         #-1/-1= cost per minute
+        add_payment_premium_to_description=True
+        convenience_statement=" The $" + str(cost_difference) + " extra for Uber is within your price tolerance."
         
         if google_travel_transfers>9999:
             explanation="Public transit is impossible so we selected Uber."
             winner='Uber'
         elif google_travel_transfers>5:
             explanation="Public transit requires " + str(google_travel_transfers) + " transfers to get to work, so we selected Uber."
+            if add_payment_premium_to_description:
+                explanation = explanation + convenience_statement
             winner='Uber'
         elif google_travel_duration-uberinfo.duration>25  and fits_in_cost_tolerance==True:
             explanation="Public transportation takes " + str(google_travel_duration-uberinfo.duration)+ " minutes longer than Uber, so we picked Uber."
+            if add_payment_premium_to_description:
+                explanation = explanation + convenience_statement
             winner='Uber'
         elif uberinfo.duration-google_travel_duration>10:
             explanation="Uber takes a route " + str(uberinfo.duration-google_travel_duration) + " minutes longer than public transportation, so we picked public transportation."
             winner='PT'
         elif google_travel_distance-uberinfo.distance>30 and fits_in_cost_tolerance==True:
             explanation="Public transportation takes a route " +  str(google_travel_distance-uberinfo.distance) + " miles longer than Uber, so we picked Uber."
+            if add_payment_premium_to_description:
+                explanation = explanation + convenience_statement
             winner='Uber'
         elif uberinfo.distance-google_travel_distance>20:
             explanation="Uber takes a route" + str(uberinfo.distance-google_travel_distance)+  " miles longer than public transportation, so we picked public transportation."
@@ -132,6 +140,7 @@ def return_best_locations_to_live(lat, long, max_cost, partial_dataset=True):
         else:
             answer[i]={'living_index':data["Live"], 'rent':data["Cost"], 'best_travel_method':google_travel_type, 'distance':google_travel_distance, 'cost_of_best_travel_method':google_cost, 'travel_duration':google_travel_duration, 'explanation':explanation}
         answer[i]['uber_premium_for_10_minutes']=uber_cost_premium_for_10_minutes
+        print uber_cost_premium_for_10_minutes
     for i in answer:
         print i, answer[i]
     return answer 

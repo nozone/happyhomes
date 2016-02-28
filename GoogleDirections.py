@@ -28,7 +28,10 @@ class GoogleDirections:
 					vehicle_type = step["transit_details"]["line"]["vehicle"]['type']
 					temp_types[vehicle_type] = temp_types[vehicle_type] + num_stops
 					#aggregateMap[vehicle_type] = aggregateMap[vehicle_type] + num_stops
-					temp_type+=vehicle_type + ' '
+					if temp_type=='':
+						temp_type=vehicle_type
+					else:
+						temp_type+=" + " + vehicle_type
 					temp_steps+=1
 				else:
 					None
@@ -39,6 +42,8 @@ class GoogleDirections:
 				for i in temp_types:
 					if i in ['BUS', 'SUBWAY', 'METRO_RAIL']:
 						aggregateMap[i]=temp_types[i]
+		if 'type'=='':
+			aggregateMap['type']="WALK"
 		return aggregateMap
 
 
