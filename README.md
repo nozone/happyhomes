@@ -17,8 +17,13 @@ Public transit and other services provide numerous mobility options for citizens
 Janice doesn’t own a car, and she’s determined to keep her transportation budget reasonable. She wants to move out of the city to an opportunity area with low crime and high-performing schools, but also needs to keep her commute time as low as possible.
 Challenge: Build a tool that helps Janice balance her transportation costs and time spent commuting, focusing on affordable housing in opportunity areas.
 
-## Bios
-See contributor details on site
+## Team & Bios
+See contributor details on site.
+Kevin Hawkins
+Savanna Rovira
+Naudy Martinez
+Martin Folkoff
+Shaq Katikala
 
 ## Datasets and API's
 - Google Directions / Geocode API
