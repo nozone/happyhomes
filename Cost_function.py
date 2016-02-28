@@ -10,6 +10,7 @@ import googlemaps
 from googlemaps import client as _client
 from googlemaps import convert
 from GoogleDirections import GoogleDirections
+import operator
 
 def return_best_locations_to_live(lat, long, max_cost, partial_dataset=True):
     """
@@ -105,7 +106,12 @@ def return_best_locations_to_live(lat, long, max_cost, partial_dataset=True):
     
     for i in answer:
         print i, answer[i]
+    return answer 
     #algorithm to determine the best
+    
+    
+    
+    
     max=0
     min=1000000000000000000000000
     min_living_index=1000
