@@ -59,8 +59,11 @@ class GoogleDirections:
 		jsonResult = client.geocode(address)
 		lat = str(jsonResult[0]["geometry"]["bounds"]["northeast"]["lat"])
 		lng = str(jsonResult[0]["geometry"]["bounds"]["northeast"]["lng"])
-		latlng = lat + "," + lng
-		return latlng
+		return {'lat':lat, 'lng':lng}
+
+	def establishClient(self):
+		client = googlemaps.Client(key="AIzaSyD6z37kjR2tSz48dTM_SOEdwduLzuwImuo")
+		return client
 
 if __name__ == '__main__': 
 	dctobmore=["Washington DC, Baltimore"]

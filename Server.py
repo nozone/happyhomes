@@ -8,6 +8,7 @@ from flask_restful import Resource, Api, reqparse, marshal_with, fields
 from Uber_cost import Uber_database
 from Estimate import Estimates
 from Cost_function import return_best_locations_to_live
+from GoogleDirections import GoogleDirections
 #import request
 
 app = Flask(__name__)
@@ -23,8 +24,7 @@ class UberInfo(Resource):
             
         
         """
-        
-        
+
         parser = reqparse.RequestParser()
         parser.add_argument('lat')
         parser.add_argument('long')
@@ -37,7 +37,15 @@ class UberInfo(Resource):
         money=args['money']
         locations=return_best_locations_to_live(args['lat'], args['long'])
         estimate=Uber_database.get_Uber_cost_between_two_addresses([args['lat'], args['long']], [fake_lat, fake_long])
-        return estimate.json()    
+        return estimate.json()
+
+    def post(self):
+        content = request.get_json(force=True)
+        gd = GoogleDirections()
+        destLatLng = gd.geoCodeAddress(gd.establishClient(), content["address"])
+        filteredHousingLocations=return_best_locations_to_live(destLatLng["lat"], destLatLng["lng"], content["money"])
+        return filteredHousingLocations
+
     
 api.add_resource(UberInfo, '/')
 
