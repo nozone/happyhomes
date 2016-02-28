@@ -1,4 +1,4 @@
-$( "#searchForm" ).submit(addListings(event) {
+$( "#submitForm" ).submit(addListings(event) {
   event.preventDefault();
 
   // Get values from elements on the page:
