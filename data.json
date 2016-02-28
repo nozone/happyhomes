@@ -1,0 +1,482 @@
+{
+    "20740": {
+        "best_travel_method": "uberX", 
+        "distance": 9.91, 
+        "living_index": 48, 
+        "uber_premium_for_10_minutes": 3.7152777777777777, 
+        "travel_duration": 30, 
+        "rent": "$1,139 ", 
+        "cost_of_best_travel_method": 18.125, 
+        "explanation": "Public transportation takes 36 minutes longer than Uber, so use Uber. The $13.375 extra for Uber is within your price tolerance."
+    }, 
+    "20910": {
+        "best_travel_method": "BUS", 
+        "distance": 5.074117153872, 
+        "living_index": 62, 
+        "uber_premium_for_10_minutes": 3.9285714285714284, 
+        "travel_duration": 39, 
+        "rent": "$1,050 ", 
+        "cost_of_best_travel_method": 1.75, 
+        "explanation": "Uber is similar to public transportation in cost, duration, and distance. Use public transportation because it's $8.25 cheaper."
+    }, 
+    "20737": {
+        "best_travel_method": "SUBWAY", 
+        "distance": 8.162331978112, 
+        "living_index": 49, 
+        "uber_premium_for_10_minutes": 4.137931034482759, 
+        "travel_duration": 53, 
+        "rent": "$740 ", 
+        "cost_of_best_travel_method": 3, 
+        "explanation": "Uber is similar to public transportation in cost, duration, and distance. Use public transportation because it's $12.0 cheaper."
+    }, 
+    "20912": {
+        "best_travel_method": "BUS", 
+        "distance": 4.078680504288, 
+        "living_index": 61, 
+        "uber_premium_for_10_minutes": 2.717391304347826, 
+        "travel_duration": 35, 
+        "rent": "$954 ", 
+        "cost_of_best_travel_method": 1.75, 
+        "explanation": "Uber is similar to public transportation in cost, duration, and distance. Use public transportation because it's $6.25 cheaper."
+    }, 
+    "20712": {
+        "best_travel_method": "uberX", 
+        "distance": 4.13, 
+        "living_index": 55, 
+        "uber_premium_for_10_minutes": 2.307692307692308, 
+        "travel_duration": 15, 
+        "rent": "$1,096 ", 
+        "cost_of_best_travel_method": 9.0, 
+        "explanation": "Public transportation takes 26 minutes longer than Uber, so use Uber. The $6.0 extra for Uber is within your price tolerance."
+    }, 
+    "20710": {
+        "best_travel_method": "uberX", 
+        "distance": 6.08, 
+        "living_index": 51, 
+        "uber_premium_for_10_minutes": 2.661290322580645, 
+        "travel_duration": 20, 
+        "rent": "$1,150 ", 
+        "cost_of_best_travel_method": 13.0, 
+        "explanation": "Public transportation takes 31 minutes longer than Uber, so use Uber. The $8.25 extra for Uber is within your price tolerance."
+    }, 
+    "20010": {
+        "best_travel_method": "", 
+        "distance": 0.0, 
+        "living_index": 59, 
+        "uber_premium_for_10_minutes": 99999999999, 
+        "travel_duration": 0, 
+        "rent": "$1,000 ", 
+        "cost_of_best_travel_method": 0, 
+        "explanation": "Uber is similar to public transportation in cost, duration, and distance. Use public transportation because it's $5.0 cheaper."
+    }, 
+    "20011": {
+        "best_travel_method": "BUS", 
+        "distance": 3.024213591464, 
+        "living_index": 59, 
+        "uber_premium_for_10_minutes": 4.038461538461538, 
+        "travel_duration": 24, 
+        "rent": "$875 ", 
+        "cost_of_best_travel_method": 1.75, 
+        "explanation": "Uber is similar to public transportation in cost, duration, and distance. Use public transportation because it's $5.25 cheaper."
+    }, 
+    "20012": {
+        "best_travel_method": "BUS", 
+        "distance": 2.794927621616, 
+        "living_index": 57, 
+        "uber_premium_for_10_minutes": 5.25, 
+        "travel_duration": 22, 
+        "rent": "$998 ", 
+        "cost_of_best_travel_method": 1.75, 
+        "explanation": "Uber is similar to public transportation in cost, duration, and distance. Use public transportation because it's $5.25 cheaper."
+    }, 
+    "20016": {
+        "best_travel_method": "uberX", 
+        "distance": 5.0, 
+        "living_index": 56, 
+        "uber_premium_for_10_minutes": 3.1896551724137936, 
+        "travel_duration": 19, 
+        "rent": "$1,050 ", 
+        "cost_of_best_travel_method": 11.0, 
+        "explanation": "Public transportation takes 29 minutes longer than Uber, so use Uber. The $9.25 extra for Uber is within your price tolerance."
+    }, 
+    "20017": {
+        "best_travel_method": "SUBWAY", 
+        "distance": 2.91112403452, 
+        "living_index": 57, 
+        "uber_premium_for_10_minutes": 3.125, 
+        "travel_duration": 28, 
+        "rent": "$813 ", 
+        "cost_of_best_travel_method": 3, 
+        "explanation": "Uber is similar to public transportation in cost, duration, and distance. Use public transportation because it's $5.0 cheaper."
+    }, 
+    "20019": {
+        "best_travel_method": "uberX", 
+        "distance": 7.67, 
+        "living_index": 58, 
+        "uber_premium_for_10_minutes": 2.5625, 
+        "travel_duration": 22, 
+        "rent": "$1,150 ", 
+        "cost_of_best_travel_method": 15.0, 
+        "explanation": "Public transportation takes 40 minutes longer than Uber, so use Uber. The $10.25 extra for Uber is within your price tolerance."
+    }, 
+    "20770": {
+        "best_travel_method": "uberX", 
+        "distance": 13.8, 
+        "living_index": 51, 
+        "uber_premium_for_10_minutes": 2.8515625, 
+        "travel_duration": 31, 
+        "rent": "$885 ", 
+        "cost_of_best_travel_method": 23.0, 
+        "explanation": "Public transportation takes 64 minutes longer than Uber, so use Uber. The $18.25 extra for Uber is within your price tolerance."
+    }, 
+    "20032": {
+        "best_travel_method": "SUBWAY", 
+        "distance": 8.5904567294, 
+        "living_index": 58, 
+        "uber_premium_for_10_minutes": 6.25, 
+        "travel_duration": 40, 
+        "rent": "$835 ", 
+        "cost_of_best_travel_method": 6, 
+        "explanation": "Uber is similar to public transportation in cost, duration, and distance. Use public transportation because it's $10.0 cheaper."
+    }, 
+    "20743": {
+        "best_travel_method": "SUBWAY + SUBWAY", 
+        "distance": 10.62855423916, 
+        "living_index": 51, 
+        "uber_premium_for_10_minutes": 4.8809523809523805, 
+        "travel_duration": 47, 
+        "rent": "$832 ", 
+        "cost_of_best_travel_method": 6, 
+        "explanation": "Uber is similar to public transportation in cost, duration, and distance. Use public transportation because it's $10.25 cheaper."
+    }, 
+    "20036": {
+        "best_travel_method": "SUBWAY + SUBWAY", 
+        "distance": 5.456260436952, 
+        "living_index": 60, 
+        "uber_premium_for_10_minutes": 2.7777777777777777, 
+        "travel_duration": 34, 
+        "rent": "$1,000 ", 
+        "cost_of_best_travel_method": 3, 
+        "explanation": "Uber is similar to public transportation in cost, duration, and distance. Use public transportation because it's $5.0 cheaper."
+    }, 
+    "22302": {
+        "best_travel_method": "uberX", 
+        "distance": 12.03, 
+        "living_index": 57, 
+        "uber_premium_for_10_minutes": 3.611111111111111, 
+        "travel_duration": 29, 
+        "rent": "$1,109 ", 
+        "cost_of_best_travel_method": 21.0, 
+        "explanation": "Public transportation takes 45 minutes longer than Uber, so use Uber. The $16.25 extra for Uber is within your price tolerance."
+    }, 
+    "22305": {
+        "best_travel_method": "uberX", 
+        "distance": 10.06, 
+        "living_index": 59, 
+        "uber_premium_for_10_minutes": 2.628205128205128, 
+        "travel_duration": 27, 
+        "rent": "$1,150 ", 
+        "cost_of_best_travel_method": 18.0, 
+        "explanation": "Public transportation takes 39 minutes longer than Uber, so use Uber. The $10.25 extra for Uber is within your price tolerance."
+    }, 
+    "20814": {
+        "best_travel_method": "uberX", 
+        "distance": 7.83, 
+        "living_index": 60, 
+        "uber_premium_for_10_minutes": 3.333333333333333, 
+        "travel_duration": 27, 
+        "rent": "$885 ", 
+        "cost_of_best_travel_method": 15.0, 
+        "explanation": "Public transportation takes 27 minutes longer than Uber, so use Uber. The $9.0 extra for Uber is within your price tolerance."
+    }, 
+    "20815": {
+        "best_travel_method": "uberX", 
+        "distance": 6.76, 
+        "living_index": 59, 
+        "uber_premium_for_10_minutes": 2.5806451612903225, 
+        "travel_duration": 23, 
+        "rent": "$1,000 ", 
+        "cost_of_best_travel_method": 14.0, 
+        "explanation": "Public transportation takes 31 minutes longer than Uber, so use Uber. The $8.0 extra for Uber is within your price tolerance."
+    }, 
+    "22101": {
+        "best_travel_method": "uberX", 
+        "distance": 16.93, 
+        "living_index": 55, 
+        "uber_premium_for_10_minutes": 3.5648148148148144, 
+        "travel_duration": 34, 
+        "rent": "$31 ", 
+        "cost_of_best_travel_method": 27.0, 
+        "explanation": "Public transportation takes 54 minutes longer than Uber, so use Uber. The $19.25 extra for Uber is within your price tolerance."
+    }, 
+    "20746": {
+        "best_travel_method": "uberX", 
+        "distance": 12.95, 
+        "living_index": 49, 
+        "uber_premium_for_10_minutes": 1.3200025080047653e-05, 
+        "travel_duration": 31, 
+        "rent": "$1,115 ", 
+        "cost_of_best_travel_method": 22.0, 
+        "explanation": "Public transit is impossible so use Uber."
+    }, 
+    "20747": {
+        "best_travel_method": "SUBWAY + BUS", 
+        "distance": 18.605717602056, 
+        "living_index": 48, 
+        "uber_premium_for_10_minutes": 5.902777777777778, 
+        "travel_duration": 68, 
+        "rent": "$1,100 ", 
+        "cost_of_best_travel_method": 7.75, 
+        "explanation": "Uber costs $21.25 more than public transportation, which is more than your price tolerance, so use public transportation."
+    }, 
+    "20902": {
+        "best_travel_method": "BUS + BUS", 
+        "distance": 7.721779802984, 
+        "living_index": 60, 
+        "uber_premium_for_10_minutes": 4.274193548387097, 
+        "travel_duration": 58, 
+        "rent": "$835 ", 
+        "cost_of_best_travel_method": 1.75, 
+        "explanation": "Uber is similar to public transportation in cost, duration, and distance. Use public transportation because it's $13.25 cheaper."
+    }, 
+    "20903": {
+        "best_travel_method": "uberX", 
+        "distance": 5.23, 
+        "living_index": 58, 
+        "uber_premium_for_10_minutes": 1.5064102564102564, 
+        "travel_duration": 18, 
+        "rent": "$1,109 ", 
+        "cost_of_best_travel_method": 10.625, 
+        "explanation": "Public transportation takes 39 minutes longer than Uber, so use Uber. The $5.875 extra for Uber is within your price tolerance."
+    }, 
+    "20901": {
+        "best_travel_method": "BUS + BUS", 
+        "distance": 7.703760038416, 
+        "living_index": 55, 
+        "uber_premium_for_10_minutes": 5.277777777777778, 
+        "travel_duration": 53, 
+        "rent": "$856 ", 
+        "cost_of_best_travel_method": 1.75, 
+        "explanation": "Uber is similar to public transportation in cost, duration, and distance. Use public transportation because it's $14.25 cheaper."
+    }, 
+    "22203": {
+        "best_travel_method": "uberX", 
+        "distance": 10.9, 
+        "living_index": 65, 
+        "uber_premium_for_10_minutes": 2.8947368421052633, 
+        "travel_duration": 27, 
+        "rent": "$973 ", 
+        "cost_of_best_travel_method": 18.75, 
+        "explanation": "Public transportation takes 38 minutes longer than Uber, so use Uber. The $11.0 extra for Uber is within your price tolerance."
+    }, 
+    "22202": {
+        "best_travel_method": "uberX", 
+        "distance": 8.95, 
+        "living_index": 64, 
+        "uber_premium_for_10_minutes": 2.916666666666667, 
+        "travel_duration": 23, 
+        "rent": "$1,180 ", 
+        "cost_of_best_travel_method": 15.625, 
+        "explanation": "Public transportation takes 27 minutes longer than Uber, so use Uber. The $7.875 extra for Uber is within your price tolerance."
+    }, 
+    "22201": {
+        "best_travel_method": "uberX", 
+        "distance": 8.96, 
+        "living_index": 65, 
+        "uber_premium_for_10_minutes": 3.942307692307692, 
+        "travel_duration": 25, 
+        "rent": "$1,105 ", 
+        "cost_of_best_travel_method": 16.25, 
+        "explanation": "Public transportation takes 26 minutes longer than Uber, so use Uber. The $10.25 extra for Uber is within your price tolerance."
+    }, 
+    "22207": {
+        "best_travel_method": "uberX", 
+        "distance": 10.53, 
+        "living_index": 63, 
+        "uber_premium_for_10_minutes": 3.03125, 
+        "travel_duration": 26, 
+        "rent": "$32 ", 
+        "cost_of_best_travel_method": 18.125, 
+        "explanation": "Public transportation takes 40 minutes longer than Uber, so use Uber. The $12.125 extra for Uber is within your price tolerance."
+    }, 
+    "20705": {
+        "best_travel_method": "uberX", 
+        "distance": 15.34, 
+        "living_index": 49, 
+        "uber_premium_for_10_minutes": 3.5681818181818183, 
+        "travel_duration": 32, 
+        "rent": "$1,069 ", 
+        "cost_of_best_travel_method": 24.375, 
+        "explanation": "Public transportation takes 55 minutes longer than Uber, so use Uber. The $19.625 extra for Uber is within your price tolerance."
+    }, 
+    "22205": {
+        "best_travel_method": "SUBWAY + SUBWAY", 
+        "distance": 13.160020475368, 
+        "living_index": 63, 
+        "uber_premium_for_10_minutes": 4.314516129032258, 
+        "travel_duration": 61, 
+        "rent": "$891 ", 
+        "cost_of_best_travel_method": 6, 
+        "explanation": "Uber is similar to public transportation in cost, duration, and distance. Use public transportation because it's $13.375 cheaper."
+    }, 
+    "22204": {
+        "best_travel_method": "uberX", 
+        "distance": 8.8, 
+        "living_index": 64, 
+        "uber_premium_for_10_minutes": 2.8125, 
+        "travel_duration": 24, 
+        "rent": "$1,125 ", 
+        "cost_of_best_travel_method": 15.625, 
+        "explanation": "Public transportation takes 28 minutes longer than Uber, so use Uber. The $7.875 extra for Uber is within your price tolerance."
+    }, 
+    "20007": {
+        "best_travel_method": "uberX", 
+        "distance": 6.12, 
+        "living_index": 58, 
+        "uber_premium_for_10_minutes": 2.1474358974358974, 
+        "travel_duration": 24, 
+        "rent": "$1,050 ", 
+        "cost_of_best_travel_method": 13.125, 
+        "explanation": "Public transportation takes 39 minutes longer than Uber, so use Uber. The $8.375 extra for Uber is within your price tolerance."
+    }, 
+    "20781": {
+        "best_travel_method": "SUBWAY", 
+        "distance": 5.770052888912, 
+        "living_index": 51, 
+        "uber_premium_for_10_minutes": 4.583333333333333, 
+        "travel_duration": 37, 
+        "rent": "$1,197 ", 
+        "cost_of_best_travel_method": 3, 
+        "explanation": "Uber is similar to public transportation in cost, duration, and distance. Use public transportation because it's $8.25 cheaper."
+    }, 
+    "20782": {
+        "best_travel_method": "SUBWAY + BUS", 
+        "distance": 3.251014076544, 
+        "living_index": 53, 
+        "uber_premium_for_10_minutes": 1.0119047619047619, 
+        "travel_duration": 33, 
+        "rent": "$801 ", 
+        "cost_of_best_travel_method": 4.75, 
+        "explanation": "Uber is similar to public transportation in cost, duration, and distance. Use public transportation because it's $2.125 cheaper."
+    }, 
+    "20783": {
+        "best_travel_method": "uberX", 
+        "distance": 6.23, 
+        "living_index": 52, 
+        "uber_premium_for_10_minutes": 1.8902439024390243, 
+        "travel_duration": 22, 
+        "rent": "$1,105 ", 
+        "cost_of_best_travel_method": 12.5, 
+        "explanation": "Public transportation takes 41 minutes longer than Uber, so use Uber. The $7.75 extra for Uber is within your price tolerance."
+    }, 
+    "20784": {
+        "best_travel_method": "uberX", 
+        "distance": 10.69, 
+        "living_index": 50, 
+        "uber_premium_for_10_minutes": 3.0357142857142856, 
+        "travel_duration": 24, 
+        "rent": "$1,109 ", 
+        "cost_of_best_travel_method": 17.5, 
+        "explanation": "Public transportation takes 42 minutes longer than Uber, so use Uber. The $12.75 extra for Uber is within your price tolerance."
+    }, 
+    "20002": {
+        "best_travel_method": "uberX", 
+        "distance": 3.67, 
+        "living_index": 59, 
+        "uber_premium_for_10_minutes": 2.258064516129032, 
+        "travel_duration": 14, 
+        "rent": "$1,050 ", 
+        "cost_of_best_travel_method": 8.75, 
+        "explanation": "Public transportation takes 31 minutes longer than Uber, so use Uber. The $7.0 extra for Uber is within your price tolerance."
+    }, 
+    "20001": {
+        "best_travel_method": "", 
+        "distance": 1.5223594204, 
+        "living_index": 59, 
+        "uber_premium_for_10_minutes": 2.380952380952381, 
+        "travel_duration": 28, 
+        "rent": "$1,000 ", 
+        "cost_of_best_travel_method": 0, 
+        "explanation": "Uber is similar to public transportation in cost, duration, and distance. Use public transportation because it's $5.0 cheaper."
+    }, 
+    "22042": {
+        "best_travel_method": "uberX", 
+        "distance": 15.48, 
+        "living_index": 57, 
+        "uber_premium_for_10_minutes": 2.875, 
+        "travel_duration": 37, 
+        "rent": "$1,063 ", 
+        "cost_of_best_travel_method": 25.0, 
+        "explanation": "Public transportation takes 60 minutes longer than Uber, so use Uber. The $17.25 extra for Uber is within your price tolerance."
+    }, 
+    "22003": {
+        "best_travel_method": "uberX", 
+        "distance": 17.23, 
+        "living_index": 58, 
+        "uber_premium_for_10_minutes": 3.5685483870967745, 
+        "travel_duration": 36, 
+        "rent": "$1,100 ", 
+        "cost_of_best_travel_method": 26.875, 
+        "explanation": "Public transportation takes 62 minutes longer than Uber, so use Uber. The $22.125 extra for Uber is within your price tolerance."
+    }, 
+    "22044": {
+        "best_travel_method": "uberX", 
+        "distance": 12.39, 
+        "living_index": 59, 
+        "uber_premium_for_10_minutes": 2.340909090909091, 
+        "travel_duration": 29, 
+        "rent": "$1,159 ", 
+        "cost_of_best_travel_method": 20.625, 
+        "explanation": "Public transportation takes 55 minutes longer than Uber, so use Uber. The $12.875 extra for Uber is within your price tolerance."
+    }, 
+    "20020": {
+        "best_travel_method": "uberX", 
+        "distance": 7.67, 
+        "living_index": 58, 
+        "uber_premium_for_10_minutes": 2.40625, 
+        "travel_duration": 22, 
+        "rent": "$860 ", 
+        "cost_of_best_travel_method": 14.375, 
+        "explanation": "Public transportation takes 40 minutes longer than Uber, so use Uber. The $9.625 extra for Uber is within your price tolerance."
+    }, 
+    "22311": {
+        "best_travel_method": "uberX", 
+        "distance": 12.93, 
+        "living_index": 59, 
+        "uber_premium_for_10_minutes": 2.3275862068965516, 
+        "travel_duration": 29, 
+        "rent": "$1,107 ", 
+        "cost_of_best_travel_method": 21.25, 
+        "explanation": "Public transportation takes 58 minutes longer than Uber, so use Uber. The $13.5 extra for Uber is within your price tolerance."
+    }, 
+    "22046": {
+        "best_travel_method": "uberX", 
+        "distance": 12.61, 
+        "living_index": 58, 
+        "uber_premium_for_10_minutes": 3.4659090909090913, 
+        "travel_duration": 32, 
+        "rent": "$1,199 ", 
+        "cost_of_best_travel_method": 21.25, 
+        "explanation": "Public transportation takes 44 minutes longer than Uber, so use Uber. The $15.25 extra for Uber is within your price tolerance."
+    }, 
+    "22041": {
+        "best_travel_method": "uberX", 
+        "distance": 13.89, 
+        "living_index": 59, 
+        "uber_premium_for_10_minutes": 3.1696428571428568, 
+        "travel_duration": 32, 
+        "rent": "$850 ", 
+        "cost_of_best_travel_method": 22.5, 
+        "explanation": "Public transportation takes 56 minutes longer than Uber, so use Uber. The $17.75 extra for Uber is within your price tolerance."
+    }, 
+    "20785": {
+        "best_travel_method": "uberX", 
+        "distance": 10.88, 
+        "living_index": 49, 
+        "uber_premium_for_10_minutes": 1.8201754385964914, 
+        "travel_duration": 26, 
+        "rent": "$957 ", 
+        "cost_of_best_travel_method": 18.125, 
+        "explanation": "Public transportation takes 57 minutes longer than Uber, so use Uber. The $10.375 extra for Uber is within your price tolerance."
+    }
+}
