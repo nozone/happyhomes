@@ -1,10 +1,10 @@
-$('#submit').click(addListings);
+$('#searchForm').submit(addListings);
 
 $(function addListings(){
 	var $listings = $('#listings');
 
 	$.ajax({
-		type: 'GET',
+		type: 'POST',
 		url:
 		success: function(listings) {
 			$.each(listings, function(i, listing) {
