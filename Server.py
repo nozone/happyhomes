@@ -35,16 +35,16 @@ class UberInfo(Resource):
         fake_lat=float(args['lat'])+1.0
         fake_long=float(args['long'])+1.0
         money=args['money']
-        locations=return_best_locations_to_live(args['lat'], args['long'])
-        estimate=Uber_database.get_Uber_cost_between_two_addresses([args['lat'], args['long']], [fake_lat, fake_long])
-        return estimate.json()
+        
+        locations=return_best_locations_to_live(args['lat'], args['long'], args['money'])
+        return locations
 
     def post(self):
         content = request.get_json(force=True)
         gd = GoogleDirections()
         destLatLng = gd.geoCodeAddress(gd.establishClient(), content["address"])
         filteredHousingLocations=return_best_locations_to_live(destLatLng["lat"], destLatLng["lng"], content["money"])
-        return filteredHousingLocations
+        return jsonify(filteredHousingLocations)
 
     
 api.add_resource(UberInfo, '/')

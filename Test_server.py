@@ -13,7 +13,7 @@ if __name__ == '__main__':
          'long':-77.030789,
          'money':50}
     
-    a=requests.get(url, data=parameters, params=parameters)
+    a=requests.post(url, json={'address':"Columbia Heights, DC", "money":10})
     print a.url
     print a.status_code 
     print a.json()

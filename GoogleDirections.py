@@ -6,8 +6,11 @@ class GoogleDirections:
 
 	def parseDirectionDump(self, directions):
 		aggregateMap = {'distance': 'N/A', 'duration':'N/A"', 'BUS':0,'SUBWAY':0,'METRO_RAIL':0, 'steps':100000000000000, 'type':''}
-
-		legs = directions[0]["legs"]
+		try:
+		
+			legs = directions[0]["legs"]
+		except:
+			return {'distance': 9999999, 'duration':999999999, 'BUS':0,'SUBWAY':0,'METRO_RAIL':0, 'steps':99999999, 'type':'No Public Transportaion Possible'}
 		print "there are " + str(len(legs)) + " legs \n"
 
 		for leg in legs:
