@@ -1,0 +1,92 @@
+{
+  "20010": {
+    "Street":"426 Newton Pl NW",
+    "City":" Washington",
+    "State":"DC",
+    "Cost":"$1,000 ",
+    "Live":59,
+    "Lat":38.933958,
+    "Long":-77.019679
+  },
+  "20705": {
+    "Street":"11413 Rosedale Ln",
+    "City":" Beltsville",
+    "State":"MD",
+    "Cost":"$1,069 ",
+    "Live":49,
+    "Lat":39.02501,
+    "Long":-76.895955
+  },
+  "20712": {
+    "Street":"4107 33rd St",
+    "City":" Mount Rainier",
+    "State":"MD",
+    "Cost":"$1,096 ",
+    "Live":55,
+    "Lat":38.940609,
+    "Long":-76.962018
+  },
+  "20740": {
+    "Street":"6200 Westchester Park Dr",
+    "City":" College Park",
+    "State":"MD",
+    "Cost":"$1,139 ",
+    "Live":48,
+    "Lat":38.992152,
+    "Long":-76.899279
+  },
+  "20770": {
+    "Street":"47A Ridge Rd",
+    "City":" Greenbelt",
+    "State":"MD",
+    "Cost":"$885 ",
+    "Live":51,
+    "Lat":39.006428,
+    "Long":-76.873565
+  },
+  "20784": {
+    "Street":"4907 78th Ave",
+    "City":" Hyattsville",
+    "State":"MD",
+    "Cost":"$1,109 ",
+    "Live":50,
+    "Lat":38.946893,
+    "Long":-76.876887
+  },
+  "20901": {
+    "Street":"321 University Blvd W",
+    "City":" Silver Spring",
+    "State":"MD",
+    "Cost":"$856 ",
+    "Live":55,
+    "Lat":39.025042,
+    "Long":-77.017513
+  },
+  "22003": {
+    "Street":"6802 Murray Ln",
+    "City":" Annandale",
+    "State":"VA",
+    "Cost":"$1,100 ",
+    "Live":58,
+    "Lat":38.845042,
+    "Long":-77.179747
+  },
+  "22042": {
+    "Street":"7235 Arlington Blvd",
+    "City":" Falls Church",
+    "State":"VA",
+    "Cost":"$1,063 ",
+    "Live":57,
+    "Lat":38.864718,
+    "Long":-77.195506
+  },
+  "22305": {
+    "Street":"3911 Elbert Avenue",
+    "City":" Alexandria",
+    "State":"VA",
+    "Cost":"$1,150 ",
+    "Live":59,
+    "Lat":38.841674,
+    "Long":-77.064636
+  }
+}
