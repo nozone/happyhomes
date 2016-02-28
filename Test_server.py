@@ -8,7 +8,7 @@ Created on Feb 27, 2016
 import requests
 
 if __name__ == '__main__':
-    url='http://127.0.0.1:5000/'
+    url='http://127.0.0.1:5000/prices/'
     parameters={'lat':38.930582,
          'long':-77.030789,
          'money':50}

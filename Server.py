@@ -3,17 +3,23 @@ Created on Feb 27, 2016
 
 @author: Shaq
 '''
-from flask import Flask, jsonify, request
+from flask import Flask, jsonify, request, send_from_directory
 from flask_restful import Resource, Api, reqparse, marshal_with, fields
 from Uber_cost import Uber_database
 from Estimate import Estimates
 from Cost_function import return_best_locations_to_live
 from GoogleDirections import GoogleDirections
+from flask.ext.cors import CORS
 #import request
 
-app = Flask(__name__)
+app = Flask(__name__, static_url_path='')
 api = Api(app)
+CORS(app)
 Uber_database=Uber_database()
+
+
+
+
 
 class UberInfo(Resource):
     def get(self):
@@ -45,8 +51,12 @@ class UberInfo(Resource):
         destLatLng = gd.geoCodeAddress(gd.establishClient(), content["address"])
         filteredHousingLocations=return_best_locations_to_live(destLatLng["lat"], destLatLng["lng"], content["money"])
         return jsonify(filteredHousingLocations)
-
-    
+"""
+@app.route('/')
+def root():
+    return "Hello"
+    return send_from_directory('index.html', 'www')
+"""
 api.add_resource(UberInfo, '/')
 
 if __name__ == '__main__':

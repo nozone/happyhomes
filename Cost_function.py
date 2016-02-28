@@ -11,6 +11,7 @@ from googlemaps import client as _client
 from googlemaps import convert
 from GoogleDirections import GoogleDirections
 import operator
+from flask import jsonify
 
 def return_best_locations_to_live(lat, long, max_cost, partial_dataset=True):
     """
@@ -143,7 +144,7 @@ def return_best_locations_to_live(lat, long, max_cost, partial_dataset=True):
         else:
             answer[i]={'living_index':data["Live"], 'rent':data["Cost"], 'best_travel_method':google_travel_type, 'distance':google_travel_distance, 'cost_of_best_travel_method':google_cost, 'travel_duration':google_travel_duration, 'explanation':explanation}
         answer[i]['uber_premium_for_10_minutes']=uber_cost_premium_for_10_minutes
-        print uber_cost_premium_for_10_minutes
+        print answer[i]
     for i in answer:
         print i, answer[i]
     return answer 
@@ -186,4 +187,6 @@ def return_best_locations_to_live(lat, long, max_cost, partial_dataset=True):
     return  
 
 if __name__ == '__main__':
-    return_best_locations_to_live(38.933958, -77.019679, 6.0, False)
+    import json
+    with open('data.json', 'w') as outfile:
+        json.dump(return_best_locations_to_live(38.933958, -77.019679, 6.0, False), outfile)
