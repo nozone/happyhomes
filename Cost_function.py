@@ -17,10 +17,10 @@ def return_best_locations_to_live(lat, long, max_cost, partial_dataset=True):
     Needs to be sorted by the highest recommended
     
     """
-    data_file='zipcode_data (extended).json'
+    df='zipcode_data (extended).json'
     if partial_dataset==True:
-        data_file='zipcode_data.json'
-    with open('zipcode_data.json') as data_file:    
+        df='zipcode_data.json'
+    with open(df) as data_file:    
         zip_code_data = json.load(data_file)
     uber=Uber_database()
     answer={}
